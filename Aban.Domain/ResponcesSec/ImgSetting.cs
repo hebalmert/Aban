@@ -1,0 +1,20 @@
+﻿namespace Aban.Domain.ResponcesSec;
+
+public class ImgSetting
+{
+    public string ImgCorporation { get; set; } = null!;
+
+    public string ImgManager { get; set; } = null!;
+
+    public string ImgUsuario { get; set; } = null!;
+
+    public string ImgProduct { get; set; } = null!;
+
+    public string LogoSoftware { get; set; } = null!;
+
+    public string ImgNoImage { get; set; } = null!;
+
+    public string ImgNoPicture { get; set; } = null!;
+
+    public string ImgBaseUrl { get; set; } = null!;
+}

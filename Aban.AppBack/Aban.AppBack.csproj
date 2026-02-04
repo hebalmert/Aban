@@ -4,6 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>77861406-ff46-4843-bdb5-2b8570ec896e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +20,16 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aban.AppInfra\Aban.AppInfra.csproj" />
+    <ProjectReference Include="..\Aban.Domain\Aban.Domain.csproj" />
+    <ProjectReference Include="..\Aban.UnitOfWork\Aban.UnitOfWork.csproj" />
   </ItemGroup>
 
 </Project>
