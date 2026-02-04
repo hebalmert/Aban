@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
-using Regix.AppInfra.UtilityTools;
+using Aban.AppInfra.UtilityTools;
 using Aban.Domain.Entities;
 using Aban.Domain.Enum;
 using Aban.Domain.ResponcesSec;

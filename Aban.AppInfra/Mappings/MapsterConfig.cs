@@ -9,7 +9,7 @@ public static class MapsterConfig
     {
         var config = TypeAdapterConfig.GlobalSettings;
 
-        //sistema de Pruebas
+        //sistema de Pruebas para Trabjar Mappers
         //config.NewConfig<QcGeneral, QcGeneral>()
         //    .Ignore(dest => dest.Study!)
         //    .Ignore(dest => dest.Corporation!);
