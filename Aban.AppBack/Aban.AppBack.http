@@ -1,0 +1,6 @@
+@Aban.AppBack_HostAddress = http://localhost:5298
+
+GET {{Aban.AppBack_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

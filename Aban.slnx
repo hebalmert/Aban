@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="Aban.AppBack/Aban.AppBack.csproj" Id="c1ed38b2-50bc-44f7-a62c-92d39b4cf16c" />
+  <Project Path="Aban.AppFront/Aban.AppFront.csproj" Id="4538ee08-1a9c-4767-927b-e2a981629096" />
+  <Project Path="Aban.AppInfra/Aban.AppInfra.csproj" Id="3c1ce7a2-05ec-446f-b037-1a1ae18649f6" />
+  <Project Path="Aban.Domain/Aban.Domain.csproj" Id="197226cf-1acc-4bf8-b07f-d4e77adbd03d" />
+  <Project Path="Aban.HttpServices/Aban.HttpServices.csproj" Id="4079f7b5-d9b8-44a9-a2b1-0a83c43b346e" />
+  <Project Path="Aban.Services/Aban.Services.csproj" Id="e33526f0-4415-466f-806a-073cfcea7908" />
+  <Project Path="Aban.UnitOfWork/Aban.UnitOfWork.csproj" Id="57d1e6b4-89d4-4254-b213-b453f5824527" />
+</Solution>
