@@ -1,7 +1,7 @@
 ﻿using Aban.Domain.FileHandler;
 using Microsoft.AspNetCore.Http;
 
-namespace Regix.AppInfra.FileHelper;
+namespace Aban.AppInfra.FileHelper;
 
 public interface IFileStorage
 {

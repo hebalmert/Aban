@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Aban.AppInfra\Aban.AppInfra.csproj" />
+    <ProjectReference Include="..\Aban.Domain\Aban.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

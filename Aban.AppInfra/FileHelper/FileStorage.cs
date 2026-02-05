@@ -7,7 +7,7 @@ using Azure.Storage.Sas;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 
-namespace Regix.AppInfra.FileHelper;
+namespace Aban.AppInfra.FileHelper;
 
 public class FileStorage : IFileStorage
 {

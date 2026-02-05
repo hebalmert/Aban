@@ -1141,6 +1141,15 @@ namespace Aban.Domain.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to [Select Country].
+        /// </summary>
+        public static string Select_Country {
+            get {
+                return ResourceManager.GetString("Select_Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to State.
         /// </summary>
         public static string State {

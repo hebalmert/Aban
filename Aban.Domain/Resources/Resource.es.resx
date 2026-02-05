@@ -502,4 +502,7 @@
   <data name="Cities" xml:space="preserve">
     <value>Ciudades</value>
   </data>
+  <data name="Select_Country" xml:space="preserve">
+    <value>[Seleccione Country]</value>
+  </data>
 </root>
