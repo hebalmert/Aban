@@ -199,14 +199,24 @@ public class CorporationService : ICorporationService
 
     public async Task<ActionResponse<Corporation>> AddAsync(Corporation modelo)
     {
+        if (modelo == null)
+        {
+            return new ActionResponse<Corporation>
+            {
+                WasSuccess = false,
+                Message = _localizer["Generic_InvalidModel"]
+            };
+        }
+
         if (!ValidatorModel.IsValid(modelo, out var errores))
         {
             return new ActionResponse<Corporation>
             {
                 WasSuccess = false,
-                Message = _localizer["Generic_InvalidModel"] // 🧠 Clave multilenguaje para modelo nulo
+                Message = _localizer["Generic_InvalidModel"]
             };
         }
+
         await _transactionManager.BeginTransactionAsync();
         try
         {

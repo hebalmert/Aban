@@ -147,14 +147,25 @@ public class CityService : ICityService
 
     public async Task<ActionResponse<City>> AddAsync(City modelo)
     {
+        if (modelo == null)
+        {
+            return new ActionResponse<City>
+            {
+                WasSuccess = false,
+                Message = _localizer["Generic_InvalidModel"]
+            };
+        }
+
         if (!ValidatorModel.IsValid(modelo, out var errores))
         {
             return new ActionResponse<City>
             {
                 WasSuccess = false,
-                Message = _localizer["Generic_InvalidModel"] // 🧠 Clave multilenguaje para modelo nulo
+                Message = _localizer["Generic_InvalidModel"]
             };
         }
+
+
 
         await _transactionManager.BeginTransactionAsync();
         try

@@ -6,4 +6,5 @@
   <Project Path="Aban.HttpServices/Aban.HttpServices.csproj" Id="4079f7b5-d9b8-44a9-a2b1-0a83c43b346e" />
   <Project Path="Aban.Services/Aban.Services.csproj" Id="e33526f0-4415-466f-806a-073cfcea7908" />
   <Project Path="Aban.UnitOfWork/Aban.UnitOfWork.csproj" Id="57d1e6b4-89d4-4254-b213-b453f5824527" />
+  <Project Path="Aban.xTests/Aban.xTests.csproj" Id="140b2740-ff24-4a99-a2b8-ab2bdde39e1b" />
 </Solution>
