@@ -121,10 +121,6 @@ public class AccountService : IAccountService
                             imgUsuario = ImagenDefault;
                         }
                         break;
-
-                    case "Patient":
-                        imgUsuario = ImagenDefault;
-                        break;
                 }
             }
             return new ActionResponse<TokenDTO>

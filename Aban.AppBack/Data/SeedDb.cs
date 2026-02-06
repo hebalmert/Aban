@@ -27,7 +27,7 @@ public class SeedDb
         await CheckRolesAsync();
         await CheckCountries();
         await CheckCorporationAsync();
-        await CheckUserAsync("Optimus U", "TrialPro", "hebalmert", "optimusu.soft@gmail.com", "+1 786 503", UserType.Admin);
+        await CheckUserAsync("Abantail", "TrialPro", "hebalmert", "merchanhebert@gmail.com", "+1 786 503", UserType.Admin);
     }
 
     private async Task CheckCorporationAsync()
@@ -36,13 +36,13 @@ public class SeedDb
         {
             Corporation corporation = new()
             {
-                Name = "Hebalmert LLC",
+                Name = "Abantail",
                 NroDocument = "3445645645",
                 Phone = "786 503 4489",
                 Address = "Street 45",
                 CountryId = 1,
-                DateStart = DateTime.Now,
-                DateEnd = DateTime.Now.AddYears(10),
+                DateStart = DateTime.UtcNow,
+                DateEnd = DateTime.UtcNow.AddYears(10),
                 Active = true
             };
             _context.Corporations.Add(corporation);

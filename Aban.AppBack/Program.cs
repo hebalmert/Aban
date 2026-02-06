@@ -194,6 +194,19 @@ var app = builder.Build();
 var localizationOptions = app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 app.UseRequestLocalization(localizationOptions);
 
+//Seeder con manejo de errores
+try
+{
+    using var scope = app.Services.CreateScope();
+    var seeder = scope.ServiceProvider.GetRequiredService<SeedDb>();
+    await seeder.SeedAsync();
+    Console.WriteLine("Seeder ejecutado correctamente");
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Error en Seeder: {ex.Message}");
+}
+
 //Pipeline de captura de ejecucion, solo en desarrollo muestra Swagger
 if (app.Environment.IsDevelopment())
 {
