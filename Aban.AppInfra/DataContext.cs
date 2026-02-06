@@ -1,4 +1,5 @@
-﻿using Aban.Domain.Entities;
+﻿using Aban.Domain.EntitesSoftSec;
+using Aban.Domain.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
@@ -11,6 +12,16 @@ public class DataContext : IdentityDbContext<User>
     {
     }
 
+    //EntitiesSoftSec
+
+    public DbSet<Usuario> Usuarios => Set<Usuario>();
+    public DbSet<UsuarioRole> UsuarioRoles => Set<UsuarioRole>();
+
+    //Manejo de UserRoles por Usuario
+
+    public DbSet<UserRoleDetails> UserRoleDetails => Set<UserRoleDetails>();
+
+
     //Entities
 
     public DbSet<Country> Countries => Set<Country>();
@@ -18,7 +29,6 @@ public class DataContext : IdentityDbContext<User>
     public DbSet<City> Cities => Set<City>();
     public DbSet<Manager> Managers => Set<Manager>();
     public DbSet<Corporation> Corporations => Set<Corporation>();
-    public DbSet<UserRoleDetails> UserRoleDetails => Set<UserRoleDetails>();
 
 
 

@@ -23,10 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Aban.AppInfra\Aban.AppInfra.csproj" />
     <ProjectReference Include="..\Aban.Domain\Aban.Domain.csproj" />
     <ProjectReference Include="..\Aban.UnitOfWork\Aban.UnitOfWork.csproj" />

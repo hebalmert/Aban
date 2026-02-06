@@ -3,6 +3,9 @@ using Aban.Domain.Entities;
 using Aban.Domain.Pagination;
 using Aban.Domain.ResponcesSec;
 
+namespace Aban.Services.InterfaceEntities;
+
+
 public interface IStateService
 {
     Task<ActionResponse<IEnumerable<State>>> ComboAsync(ClaimsDTOs claimsDTO);

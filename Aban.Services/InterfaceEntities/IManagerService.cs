@@ -2,6 +2,8 @@
 using Aban.Domain.Entities;
 using Aban.Domain.Pagination;
 
+namespace Aban.Services.InterfaceEntities;
+
 public interface IManagerService
 {
     Task<ActionResponse<IEnumerable<Manager>>> GetAsync(PaginationDTO pagination);

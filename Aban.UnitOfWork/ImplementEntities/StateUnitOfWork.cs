@@ -2,6 +2,7 @@
 using Aban.Domain.Entities;
 using Aban.Domain.Pagination;
 using Aban.Domain.ResponcesSec;
+using Aban.Services.InterfaceEntities;
 using Aban.UnitOfWork.InterfaceEntities;
 
 namespace Aban.UnitOfWork.ImplementEntities;

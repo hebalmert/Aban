@@ -7,11 +7,12 @@ using Aban.Domain.AbanResponse;
 using Aban.Domain.Entities;
 using Aban.Domain.Pagination;
 using Aban.Domain.ResponcesSec;
+using Aban.Services.InterfaceEntities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
 
-namespace Regix.Services.ImplementEntties;
+namespace Aban.Services.ImplementEntties;
 
 public class StateService : IStateService
 {
