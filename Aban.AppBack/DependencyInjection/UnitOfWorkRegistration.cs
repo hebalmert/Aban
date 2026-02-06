@@ -1,12 +1,16 @@
 ﻿
 
+using Aban.Services.ImplementEntitiesSoft;
 using Aban.Services.ImplementEntties;
 using Aban.Services.ImplementSecure;
 using Aban.Services.InterfaceEntities;
+using Aban.Services.InterfacesEntitiesGen;
 using Aban.Services.InterfacesSecure;
 using Aban.UnitOfWork.ImplementEntities;
+using Aban.UnitOfWork.ImplementEntitiesSoft;
 using Aban.UnitOfWork.ImplementSecure;
 using Aban.UnitOfWork.InterfaceEntities;
+using Aban.UnitOfWork.InterfacesEntitiesGen;
 using Aban.UnitOfWork.InterfacesSecure;
 
 namespace Aban.AppBack.DependencyInjection
@@ -35,8 +39,9 @@ namespace Aban.AppBack.DependencyInjection
             services.AddScoped<IManagerUnitOfWork, ManagerUnitOfWork>();
             services.AddScoped<IManagerService, ManagerService>();
 
-
-
+            //EntitiesSoft
+            services.AddScoped<IProductUnitOfWork, ProductUnitOfWork>();
+            services.AddScoped<IProductService, ProductService>();
 
         }
     }

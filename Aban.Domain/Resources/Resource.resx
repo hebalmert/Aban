@@ -505,4 +505,7 @@
   <data name="Select_Country" xml:space="preserve">
     <value>[Select Country]</value>
   </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
 </root>

@@ -1,4 +1,6 @@
-﻿using Mapster;
+﻿using Aban.Domain.DTOs;
+using Aban.Domain.EntitiesSoft;
+using Mapster;
 
 
 namespace Aban.AppInfra.Mappings;
@@ -14,6 +16,8 @@ public static class MapsterConfig
         //    .Ignore(dest => dest.Study!)
         //    .Ignore(dest => dest.Corporation!);
 
-
+        config.NewConfig<ProductDTO, Product>()
+            .Ignore(dest => dest.Corporation!);
+        config.NewConfig<Product, ProductDTO>();
     }
 }

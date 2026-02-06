@@ -1,5 +1,6 @@
 ﻿using Aban.Domain.EntitesSoftSec;
 using Aban.Domain.Entities;
+using Aban.Domain.EntitiesSoft;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
@@ -30,6 +31,9 @@ public class DataContext : IdentityDbContext<User>
     public DbSet<Manager> Managers => Set<Manager>();
     public DbSet<Corporation> Corporations => Set<Corporation>();
 
+    //EntitiesSoft
+
+    public DbSet<Product> Products => Set<Product>();
 
 
     //Esta parte nos permite tomar las configuraciones desde otra ubicacion, para mantener el codigo mas ordenado
